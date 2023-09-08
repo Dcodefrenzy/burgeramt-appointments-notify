@@ -100,7 +100,7 @@ export const crawlFirstMonth = async (req: Request, res: Response) => {
     const customHeaders = {
       Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
       "Upgrade-Insecure-Requests": "1",
-      "User-Agent": `Mozilla/5.0   AppointmentBookingTool/1.1 (AppointmentNotifyBot; ${process.env.USER_MAIL}; ${process.env.SCRIPT_ID})`,
+      "User-Agent": `Mozilla/5.0   AppointmentBookingTool/1.1 (${process.env.URL}; ${process.env.USER_MAIL}; ${process.env.SCRIPT_ID})`,
       "Accept-Language": "en-gb",
       "Accept-Encoding": "gzip, deflate",
       Connection: "keep-alive",
